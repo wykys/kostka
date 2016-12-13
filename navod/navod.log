@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.3)  13 DEC 2016 23:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.3)  14 DEC 2016 00:05
 entering extended mode
 **./navod.tex
 (navod.tex
@@ -623,11 +623,11 @@ LaTeX Font Info:    ... okay on input line 73.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead 
 * h-part:(L,W,R)=(35.56593pt, 526.37598pt, 35.56596pt)
-* v-part:(T,H,B)=(28.45274pt, 788.14136pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 802.36774pt, 14.22636pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=526.37598pt
-* \textheight=751.14136pt
+* \textheight=765.36774pt
 * \oddsidemargin=-36.70406pt
 * \evensidemargin=-36.70406pt
 * \topmargin=-43.81725pt
@@ -822,16 +822,9 @@ Package pdftex.def Info: ../img/LED.pdf used on input line 9.
 (pdftex.def)             Requested size: 526.37598pt x 308.03516pt.
 )
 (jak.tex) (zdrojak.tex
-(C:\Users\wykys\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(C:\Users\wykys\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-)
-(../fw/kostka/kostka/main.c
 File: ../img/logo.pdf Graphic file (type pdf)
  <use ../img/logo.pdf>
-Package pdftex.def Info: ../img/logo.pdf used on input line 7.
+Package pdftex.def Info: ../img/logo.pdf used on input line 1.
 (pdftex.def)             Requested size: 48.36958pt x 21.92982pt.
 
 
@@ -840,7 +833,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3 <../img/LED.pdf>]))
+[3 <../img/LED.pdf>]
+(C:\Users\wykys\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(C:\Users\wykys\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+(../fw/kostka/kostka/main.c))
 File: ../img/logo.pdf Graphic file (type pdf)
  <use ../img/logo.pdf>
 Package pdftex.def Info: ../img/logo.pdf used on input line 83.
@@ -852,19 +852,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] (navod.aux)
+[4
+
+] (navod.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7228 strings out of 493334
- 94021 string characters out of 3139252
- 291286 words of memory out of 3000000
- 10596 multiletter control sequences out of 15000+200000
- 12807 words of font info for 38 fonts, out of 3000000 for 9000
+ 7243 strings out of 493334
+ 94163 string characters out of 3139252
+ 303477 words of memory out of 3000000
+ 10605 multiletter control sequences out of 15000+200000
+ 14997 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,19n,49p,890b,1929s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,19n,49p,890b,1173s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\wykys\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 ecrm0900.pk> <C:\Users\wykys\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\ecrm0600.pk> <C:\Users\wykys\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
@@ -874,10 +876,11 @@ ec\dpi600\ecrm0600.pk> <C:\Users\wykys\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
 9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb>
-Output written on navod.pdf (4 pages, 10107620 bytes).
+ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy9.pfb>
+Output written on navod.pdf (4 pages, 10114918 bytes).
 PDF statistics:
- 396 PDF objects out of 1000 (max. 8388607)
+ 399 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
