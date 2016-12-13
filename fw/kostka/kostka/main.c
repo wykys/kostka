@@ -56,7 +56,7 @@ int main(void)
 	TCCR0A = 1<<WGM01;  // nastav citac co CTC modu	
 	OCR0A = 5;          // nastav porovnavaci registr	
 	TCNT0 = 0x00;       // vynuluj citaci registr	
-	TCCR0B = (1<<CS00); // nastav frekvenci citani clk/1024	
+	TCCR0B = 1<<CS00;   // nastav frekvenci citani clk/1024	
 	MCUCR = 0x00;       // nastav preruseni na sestupnou hranu	
 	GIMSK = 1<<INT0;    // povol preruseni od INT0	
 	sei();              // globalni povoleni preruseni
