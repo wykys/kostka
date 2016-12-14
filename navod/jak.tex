@@ -1,11 +1,11 @@
 \section*{Jak to funguje?}
 
-Srdcem kostky je maličký mikrokontrolér ATTINY13, což je osmibitový čip s architekturou AVR. Jeho větší bratříčky lze nalézt třeba v ARDUINu. Mikrokontrolér nastaví svůj interní čítač tak, aby čítal od nuly do pětky. Dále nastaví přerušení na sestupnou hranu, které nastane při stisku tlačítka. Poté co vše nastaví, tak skočí do nekonečného cyklu.
+Srdcem kostky je malý mikrokontrolér ATTINY13, což je osmibitový čip s architekturou AVR. Jeho větší bratříčky lze nalézt třeba v ARDUINu. Po zapnutí a vnitřním resetování mikrokontrolér nastaví svůj interní čítač tak, aby čítal od nuly do pětky. Dále nastaví přerušení na sestupnou hranu, které nastane při stisku tlačítka. Poté co vše nastaví, tak skočí do nekonečné smyčky.
 
-Když je stisknuto tlačítko, tak nastane přerušení. Program je přerušen a po uložení adresy s programového čítače (to je místo kde se v programu právě nacházíme) do zásobníku (což je paměť typu First In Last Out) skočí na obslužný podprogram přerušení. Dokud je tlačítko stisknuto, tak je na výstupní piny generováno napětí takovým způsobem, který způsobuje postupné rozsvěcování LED a vyvolává efekt, že se točí.
+Když je stisknuto tlačítko, tak nastane přerušení. Program je přerušen a po uložení adresy z programového čítače (to je místo kde se v programu právě nacházíme) do zásobníku (což je paměť typu Last In First Out) skočí na obslužný podprogram přerušení. Dokud je tlačítko stisknuto,  je na výstupních pinech generována posloupnost tak, že LED diody vytváří efekt točící se úsečky - naznačuje míchání kostkou.
 
-Po uvolnění tlačítka je s registru čítače vyzvednuta aktuální hodnota. Tato hodnota se dekóduje pomocí tabulky a rozsvítí se příslušné LED, které zobrazí výslední číslo. Při zobrazování čísla ještě číslo třikrát zabliká, během doby kdy bliká nejde losovat další číslo. To je kvůli omezení podvádění několika rychlými stisky za sebou.
+Po uvolnění tlačítka dojde k načtení aktuální hodnoty čítače, která je pak pomocí kódovací tabulky převedena na odpovídající zobrazení hodnoty vrhu kostky. Při zobrazování čísla ještě číslo třikrát zabliká, během doby kdy bliká nejde losovat další číslo. To je kvůli omezení podvádění několika rychlými stisky za sebou.
 
 Když skončí podprogram přerušení, tak je ze zásobníku opět vyzvednuta adresa a program se opět vrátí do nekoneční smyčky.
 
-Rezistory $R_1 - R_7$ tu jsou kvůli nastavení pracovního bodu LED diody. Bez nich by LED shořely. Rezistor $R_8$ tu je kvůli nastavení vhodné úrovně na vstupu RESET. Bez něj by se zařízení mohlo restartovat. Kondenzátor $C_1$ slouží k eliminaci kmitů napětí při stisku či uvolnění tlačítka. Kondenzátor $C_2$ tu je kvůli odfiltrování rušení.
+Rezistory $R_1 - R_7$ je nastaven pracovní proud LED diody, bez kterých by mohlo dojít ke zničení LED diod nadměrným proudem. Rezistor $R_8$ zabezpečuje správnou funkci resetu mikrokontroléru po zapnutí. Kondenzátor $C_1$ slouží k eliminaci zákmitů napětí při stisku či uvolnění tlačítka.
